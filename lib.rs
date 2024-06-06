@@ -81,7 +81,7 @@ fn syslog_format3164(facility: syslog::Facility, hostname: Option<String>, proce
         facility,
         hostname,
         process,
-        pid: std::process::id() as i32,
+        pid: std::process::id() as u32,
     }
 }
 
